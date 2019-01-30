@@ -1,0 +1,47 @@
+{
+  "name": "8bit",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kevincoleman/8bit.git",
+  "license": "MIT",
+  "scripts": {
+    "watch": "npm dev -- --watch",
+    "dev": "npm run webpack-dev-server -- --env.env=dev",
+    "dev:debug": "npm dev -- --env.debug=true",
+    "prod": "npm webpack -- --env.env=prod",
+    "prod:debug": "npm prod -- --env.debug=true",
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server --port=9000",
+    "test-browserlist": "npx browserslist",
+    "test-autoprefixer": "npx autoprefixer --info"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "three": "^0.100.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.26.0",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.1.4"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions"
+  ]
+}
